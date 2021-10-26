@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table id="myTable" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Supprimer</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr>
+            <td>Mark</td>
+            <td>Vélo</td>
+            <td id="value">199.9</td>
+            <td class="Supprimer">X</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>PS5</td>
+            <td>449.95</td>
+            <td class="Supprimer">X</td>
+          </tr>
+          <tr>
+            <td>Larry the Bird</td>
+            <td>Smartphone</td>
+            <td>889.49</td>
+            <td class="Supprimer">X</td>
+          </tr>
+          <tr>
+            <td>Jamsy</td>
+            <td>Moto</td>
+            <td>2288.99</td>
+            <td class="Supprimer">X</td>
+          </tr>
+        </tbody>
+            
+      </table>
+      <span>TOTALE: </span><span id="total"></span>
+      <h1>Had new result</h1>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input class="form-control verif" id="name">
+          <p id=error-message></p>  
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" id="description" rows="3"></textarea>
+          
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Price</label>
+            <input type="" class="form-control verif" id="price">
+            <p id=error-message-price></p>
+          </div>
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <script src="script.js"></script>
+</body>
+</html>
